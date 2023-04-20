@@ -1,12 +1,27 @@
 // Manipulación del DOM para mostrar la lista de usuarios
 function showUserList(users) {
-    const userList = $('#user-list');
+    /* const userList = $('#user-list');
     userList.empty();
     users.forEach((user) => {
         const item = $('<li></li>');
         item.text(`${user.name} (${user.id}) - ${user.phone}`);
         userList.append(item);
+    }); */
+
+    const userList = $('#tbody');
+    userList.empty();
+    users.forEach((user) => {
+        const item = $(`
+        <tr>
+            <td class="text_left">${user.name}</td>
+            <td class="text_left">${user.id}</td>
+            <td class="text_left">${user.phone}</td>
+        </tr>
+    `);
+        /* item.innerHTML()(`${user.name}, ${user.name}, ${user.name}`); */
+        userList.append(item);
     });
+    
 }
 
 // Manejo del envío del formulario

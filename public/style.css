@@ -200,8 +200,9 @@ nav ul li.active span{
 footer{
     margin-top: 80px;
     text-align: center;
-    background: url(/public/img/bg.jpg);
+    /*background: url(../../public/img/bg.jpg);*/
     padding: 40px;
+    background-color: #16132b;
 }
 .copyright{
     color: #FFFFFF;

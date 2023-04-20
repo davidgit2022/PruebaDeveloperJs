@@ -7,6 +7,30 @@
   </head>
 
   <body>
+    <!-- <header>
+      <div class="">
+        <nav>
+          <ul>
+            <li>
+              <a href="/public/index.html">
+                <i class="fa" style="font-size: 40px">
+                  <ion-icon name="home-outline"></ion-icon>
+                </i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="/public/users.html">
+                <i class="fa" style="font-size: 40px">
+                  <ion-icon name="people-outline"></ion-icon>
+                </i>
+                <span>Users</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header> -->
     <main>
       <div class="even-column">
         <form id="user-form" class="form">
@@ -27,7 +51,7 @@
 
             <!-- Input cedula -->
             <div class="form_group">
-              <input type="text" id="id" name="id" class="form_input"
+              <input type="number" id="id" name="id" class="form_input"
               placeholder=" "/>
               <label for="id" class="form_label">Cédula:</label>
               <span class="form_line"></span>
@@ -61,22 +85,8 @@
                 <th class="table_left">Teléfono</th>
               </tr>
             </thead>
-            <tbody class="table_hover">
-              <tr>
-                <td class="text_left">Juan</td>
-                <td class="text_left">1085300523</td>
-                <td class="text_left">3122358965</td>
-              </tr>
-              <tr>
-                <td class="text_left">Carlos</td>
-                <td class="text_left">1085300523</td>
-                <td class="text_left">3122358965</td>
-              </tr>
-              <tr>
-                <td class="text_left">Pedro</td>
-                <td class="text_left">1085300523</td>
-                <td class="text_left">3122358965</td>
-              </tr>
+            <tbody class="table_hover" id="tbody">
+              
             </tbody>
           </table>
         </div>
@@ -87,6 +97,8 @@
       <p class="copyright">&copy Copyright Deivy Potosi 2023</p>
     </footer>
 
+    <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
   </body>

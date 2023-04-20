@@ -45,7 +45,6 @@ const getAllUsers = async (req, res) => {
 }
 
 module.exports = {
-    home,
     createUser,
     getAllUsers,
 }

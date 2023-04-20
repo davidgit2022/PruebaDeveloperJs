@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Formulario de registro</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
+  <body>
+    <main>
+      <div class="even-column">
+        <form id="user-form" class="form">
+          <h1 class="form_title">Formulario de registro</h1>
+          <div class="form_container">
+            <!-- Input nombre -->
+            <div class="form_group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form_input"
+                placeholder=" "
+              />
+              <label for="name" class="form_label">Nombre:</label>
+              <span class="form_line"></span>
+            </div>
 
-    <body>
-        <h1>Formulario de registro</h1>
-        <form id="user-form">
-            <div>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" />
+            <!-- Input cedula -->
+            <div class="form_group">
+              <input type="text" id="id" name="id" class="form_input"
+              placeholder=" "/>
+              <label for="id" class="form_label">Cédula:</label>
+              <span class="form_line"></span>
             </div>
-            <div>
-                <label for="id">Cédula:</label>
-                <input type="text" id="id" name="id" />
+
+            <!-- Input teléfono -->
+            <div class="form_group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form_input"
+                placeholder=" "
+              />
+              <label for="phone" class="form_label">Teléfono:</label>
+              <span class="form_line"></span>
             </div>
-            <div>
-                <label for="phone">Teléfono:</label>
-                <input type="text" id="phone" name="phone" />
-            </div>
-            <button type="submit">Guardar</button>
+            <button type="submit" class="form_submit">Guardar</button>
+          </div>
         </form>
-        <ul id="user-list"></ul>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="app.js"></script>
-    </body>
+        <!-- <ul id="user-list"></ul> -->
+        <div>
+          <div class="table_title">
+            <h3>Usuarios</h3>
+          </div>
+          <table class="table_fill">
+            <thead>
+              <tr>
+                <th class="table_left">Nombre</th>
+                <th class="table_left">Cedula</th>
+                <th class="table_left">Teléfono</th>
+              </tr>
+            </thead>
+            <tbody class="table_hover">
+              <tr>
+                <td class="text_left">Juan</td>
+                <td class="text_left">1085300523</td>
+                <td class="text_left">3122358965</td>
+              </tr>
+              <tr>
+                <td class="text_left">Carlos</td>
+                <td class="text_left">1085300523</td>
+                <td class="text_left">3122358965</td>
+              </tr>
+              <tr>
+                <td class="text_left">Pedro</td>
+                <td class="text_left">1085300523</td>
+                <td class="text_left">3122358965</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">&copy Copyright Deivy Potosi 2023</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

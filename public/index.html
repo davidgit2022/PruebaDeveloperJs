@@ -7,12 +7,12 @@
   </head>
 
   <body>
-    <!-- <header>
+    <header>
       <div class="">
         <nav>
           <ul>
             <li>
-              <a href="/public/index.html">
+              <a href="index.html">
                 <i class="fa" style="font-size: 40px">
                   <ion-icon name="home-outline"></ion-icon>
                 </i>
@@ -20,7 +20,7 @@
               </a>
             </li>
             <li>
-              <a href="/public/users.html">
+              <a href="users.html">
                 <i class="fa" style="font-size: 40px">
                   <ion-icon name="people-outline"></ion-icon>
                 </i>
@@ -30,75 +30,66 @@
           </ul>
         </nav>
       </div>
-    </header> -->
+    </header>
     <main>
-      <div class="even-column">
-        <form id="user-form" class="form">
-          <h1 class="form_title">Formulario de registro</h1>
-          <div class="form_container">
-            <!-- Input nombre -->
-            <div class="form_group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form_input"
-                placeholder=" "
-              />
-              <label for="name" class="form_label">Nombre:</label>
-              <span class="form_line"></span>
-            </div>
-
-            <!-- Input cedula -->
-            <div class="form_group">
-              <input type="number" id="id" name="id" class="form_input"
-              placeholder=" "/>
-              <label for="id" class="form_label">Cédula:</label>
-              <span class="form_line"></span>
-            </div>
-
-            <!-- Input teléfono -->
-            <div class="form_group">
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                class="form_input"
-                placeholder=" "
-              />
-              <label for="phone" class="form_label">Teléfono:</label>
-              <span class="form_line"></span>
-            </div>
-            <button type="submit" class="form_submit">Guardar</button>
+      <form id="user-form" class="form">
+        <h1 class="form_title">Formulario de registro</h1>
+        <div class="form_container">
+          <!-- Input nombre -->
+          <div class="form_group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form_input"
+              placeholder=" "
+            />
+            <label for="name" class="form_label">Nombre:</label>
+            <span class="form_line"></span>
           </div>
-        </form>
-        <!-- <ul id="user-list"></ul> -->
-        <div>
-          <div class="table_title">
-            <h3>Usuarios</h3>
+
+          <!-- Input cedula -->
+          <div class="form_group">
+            <input
+              type="number"
+              id="id"
+              name="id"
+              class="form_input"
+              placeholder=" "
+            />
+            <label for="id" class="form_label">Cédula:</label>
+            <span class="form_line"></span>
           </div>
-          <table class="table_fill">
-            <thead>
-              <tr>
-                <th class="table_left">Nombre</th>
-                <th class="table_left">Cedula</th>
-                <th class="table_left">Teléfono</th>
-              </tr>
-            </thead>
-            <tbody class="table_hover" id="tbody">
-              
-            </tbody>
-          </table>
+
+          <!-- Input teléfono -->
+          <div class="form_group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form_input"
+              placeholder=" "
+            />
+            <label for="phone" class="form_label">Teléfono:</label>
+            <span class="form_line"></span>
+          </div>
+          <button type="submit" class="form_submit">Guardar</button>
         </div>
-      </div>
+      </form>
     </main>
 
     <footer>
       <p class="copyright">&copy Copyright Deivy Potosi 2023</p>
     </footer>
 
-    <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
   </body>

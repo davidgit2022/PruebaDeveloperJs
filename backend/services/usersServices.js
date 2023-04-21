@@ -1,7 +1,3 @@
-// * Obtener los datos del json
-const data = require('../db.json');
-
-
 const createUser = async (req, res) => {
     try {
         const name = req.body.name;

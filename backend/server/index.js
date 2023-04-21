@@ -1,11 +1,18 @@
-const usersRouter = require('../routes/users.routes');
-const express = require('express');
+/* const usersRouter = require('../routes/users.routes');
+
 
 function apiRouter(app) {
-  const router = express.Router();
+  
+  app.use('/products',usersRouter);
+}
 
-  app.use('/api', router);
-  router.use('/', usersRouter);
+module.exports = apiRouter; */
+
+
+const usersRouter = require('../routes/users.routes');
+
+function apiRouter(app) {
+  app.use('/users', usersRouter);
 }
 
 module.exports = apiRouter;
